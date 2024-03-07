@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content='no-referrer' name='referrer'/>
+    
+    <meta name="description" content="Salam badminton! Mari bergabung dalam grup Telegram kami yang penuh semangat untuk para pencinta olahraga bulu tangkis. Temukan teman baru, berbagi tips, dan jadwalkan pertandingan seru bersama-sama! Gabung sekarang dan jadilah bagian dari komunitas kami yang ramah dan bersemangat!">
+    <meta name="keywords" content="badminton, live streaming, watch badminton, badminton matches, badminton tournaments, badminton live, badminton online, badminton games, badminton events, badminton championships, badminton world tour">
+    <meta name="author" content="LIVE STREAMING BADMINTON">
+    <meta name="robots" content="index, follow"> <!-- untuk mengizinkan mesin pencari mengindex halaman dan mengikuti tautan -->
+
+    <style>
+        .gomuStrem>.gPembed {
+            background: #000;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gPembed>.resGomu {
+            position: relative;
+            z-index: 1;
+            max-width: 100%;
+            height: 0;
+            padding-bottom: 56.2%;
+        }
+
+        .resGomu>iframe {
+            position: absolute;
+            border: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            z-index: 2;
+        }
+
+        .gomuStrem>.gData {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #000000;
+            position: relative;
+            overflow: hidden;
+            padding: 10px 15px;
+            font-size: 0.85em;
+            margin-bottom: 15px;
+        }
+
+        .gData>.gSel>.gomuSelect {
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            color: #363636;
+            padding: 5px 3px;
+            font-size: 13px;
+            font-weight: 300;
+            outline: 0;
+        }
+
+        .gDow>div:not(:last-child) {
+            margin-right: 7px;
+        }
+
+        .gDow>div {
+            padding: 5px;
+            font-size: 12.5px;
+            line-height: 1.2em;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .gDow>div:before {
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+            margin-right: 3px;
+        }
+
+        .gCinema:before {
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12,2A7,7 0 0,1 19,9C19,11.38 17.81,13.47 16,14.74V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V14.74C6.19,13.47 5,11.38 5,9A7,7 0 0,1 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,0 7,9C7,11.05 8.23,12.81 10,13.58V16H14V13.58C15.77,12.81 17,11.05 17,9A5,5 0 0,0 12,4Z' fill='%23a20a0a'/%3E%3C/svg%3E") center/14px no-repeat;
+        }
+
+        .gCinema.gDark:before {
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12,2C9.76,2 7.78,3.05 6.5,4.68L7.93,6.11C8.84,4.84 10.32,4 12,4A5,5 0 0,1 17,9C17,10.68 16.16,12.16 14.89,13.06L16.31,14.5C17.94,13.21 19,11.24 19,9A7,7 0 0,0 12,2M3.28,4L2,5.27L5.04,8.3C5,8.53 5,8.76 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H14.73L18.73,22L20,20.72L3.28,4M7.23,10.5L12.73,16H10V13.58C8.68,13 7.66,11.88 7.23,10.5M9,20V21A1,1 0 0,0 10,22H14A1,1 0 0,0 15,21V20H9Z' fill='%23a20a0a'/%3E%3C/svg%3E") center/14px no-repeat;
+        }
+
+        .gDL:before {
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8,13H10.55V10H13.45V13H16L12,17L8,13M19.35,10.04C21.95,10.22 24,12.36 24,15A5,5 0 0,1 19,20H6A6,6 0 0,1 0,14C0,10.91 2.34,8.36 5.35,8.04C6.6,5.64 9.11,4 12,4C15.64,4 18.67,6.59 19.35,10.04M19,18A3,3 0 0,0 22,15C22,13.45 20.78,12.14 19.22,12.04L17.69,11.93L17.39,10.43C16.88,7.86 14.62,6 12,6C9.94,6 8.08,7.14 7.13,8.97L6.63,9.92L5.56,10.03C3.53,10.24 2,11.95 2,14A4,4 0 0,0 6,18H19Z' fill='%23a20a0a'/%3E%3C/svg%3E") center/14px no-repeat;
+        }
+
+        .gDow>.gCinema {
+            background: #fff;
+        }
+
+        .gDow>.gDL {
+            border: 1px solid #f05252;
+            color: #f05252;
+            border-radius: 3px;
+            font-weight: 500;
+            padding: 3px 10px;
+        }
+
+        #gomuShadow {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.93);
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            transition: all 0.5s ease;
+        }
+
+        .gomuPly {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url();
+            background-size: cover;
+        }
+
+        #gomuPly {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 68px;
+            height: 48px;
+            background-color: #333;
+            opacity: 0.8;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            z-index: 2;
+            border-radius: 12px;
+            transform: translate3d(-50%, -50%, 0);
+            cursor: pointer;
+            transition: background-color 0.3s ease-out;
+        }
+
+        #gomuPly:before {
+            content: "";
+            border-style: solid;
+            border-width: 10px 0 10px 20px;
+            border-color: transparent transparent transparent #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+
+        .gomuPly:hover #gomuPly {
+            background-color: red;
+        }
+        
+        .joinTelegram {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0088cc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            z-index: 9999;
+            transition: background-color 0.3s ease;
+        }
+
+        .joinTelegram:hover {
+            background-color: #005580;
+        }
+        
+        .shareButtons {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+
+        .shareButtons a {
+            margin-left: 10px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .shareButtons a:hover {
+            background-color: #0056b3;
+        }
+
+        .shareButtons a img {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body style="background:#000000;"/>
+<body>
+
+<!-- Tombol Share ke Sosial Media -->
+    <div class="shareButtons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://wartakita.github.io/badminton.github.io/index.html" target="_blank"><img src="https://img.icons8.com/material/24/facebook-new.png" alt="Facebook" width="20">Facebook</a>
+        
+        <a href="https://twitter.com/intent/tweet?url=https://wartakita.github.io/badminton.github.io/index.html&amp;text=Check%20out%20this%20live%20streaming%20site" target="_blank"><img src="https://img.icons8.com/material/24/twitter--v2.png" alt="Twitter" width="20">Twitter</a>
+        
+        <a href="https://www.linkedin.com/shareArticle?url=https://wartakita.github.io/badminton.github.io/index.html&amp;title=Live%20Streaming%20Site" target="_blank"><img src="https://img.icons8.com/material/24/linkedin--v1.png" alt="LinkedIn" width="20">LinkedIn</a>
+        
+        <a href="https://t.me/share/url?url=https://wartakita.github.io/badminton.github.io/index.html&amp;text=Check%20out%20this%20live%20streaming%20site" target="_blank"><img src="https://img.icons8.com/material/24/telegram-app.png" alt="Telegram" width="20">Telegram</a>
+        
+        </div>
+
+    <div class='gomuStrem'>
+        <div class='gPembed'>
+            <div class='resGomu' id='resGomu'>
+                <iframe loading="lazy" src="" frameborder="0" marginwidth="0" marginheight="0" scrolling="NO" width="100%" height="100%" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" allow="encrypted-media" name="search_iframe"></iframe>
+                <div class="gomuPly">
+                    <div id='gomuPly'></div>
+                </div>
+            </div>
+        </div>
+        <div class='gData'>
+            <div class="gSel">
+                <select id='gomuSelect' class="gomuSelect" onchange="loadMi(this)" name="gomuSelect">
+                    <option value="" selected disabled>Pilih Court</option>
+                    <option id='gomuDefault' value="https://wartakita.github.io/player.github.io/player.html#https://raw.githubusercontent.com/vibetv/comingsoon/main/allcomingsoon.mp4">Court 1</option>
+                    <option value="https://wartakita.github.io/player.github.io/player2.html#https://raw.githubusercontent.com/vibetv/comingsoon/main/allcomingsoon.mp4">Court 2</option>
+                    <option value="https://wartakita.github.io/player.github.io/player3.html#https://raw.githubusercontent.com/vibetv/comingsoon/main/allcomingsoon.mp4">Court 3</option>
+                    <option value="https://wartakita.github.io/player.github.io/player4.html#https://raw.githubusercontent.com/vibetv/comingsoon/main/allcomingsoon.mp4">Court 4</option>
+                </select>
+            </div>
+            <div class="gDow"></div>
+        </div>
+    </div>
+    <div id='gomuShadow'></div>
+    
+    <!-- Tombol Join Telegram -->
+    <a class="joinTelegram" href="https://t.me/bulutangkisid" target="_blank">Join Telegram</a>
+
+    <script>
+        function loadMi(e) {
+            if (e.value.length < 1) return false;
+            e.value && document.getElementById("resGomu").getElementsByTagName("iframe")[0].setAttribute("src", e.value);
+            document.querySelector(".gomuSelect>option").setAttribute("disabled", "disabled");
+            var t = document.getElementById("gomuPly");
+            if (t) {
+                t.parentNode.parentNode.removeChild(t.parentNode);
+            }
+            return true;
+        }
+
+        document.querySelector(".gomuPly") && document.getElementById("gomuPly").addEventListener("click", function() {
+            var e = document.getElementById("gomuPly");
+            if (e) {
+                var t = setInterval(function() {
+                    e.style.opacity || (e.style.opacity = 1);
+                    e.style.opacity > 0 ? (e.style.opacity -= 0.1) : clearInterval(t);
+                }, 200);
+                e.parentNode.parentNode.removeChild(e.parentNode);
+                document.querySelector("#resGomu iframe").setAttribute("src", document.getElementById("gomuDefault").value);
+                document.getElementById("gomuDefault").setAttribute("selected", true);
+            }
+        });
+
+        document.getElementById("gCinema").addEventListener("click", function() {
+            if (this.classList.contains("gLight")) {
+                document.querySelector(".gomuStrem>.gPembed").style.zIndex = "102";
+                this.classList.remove("gLight");
+                this.classList.add("gDark");
+                document.querySelector("#gCinema span").innerHTML = "Turn on Light";
+                this.style.zIndex = "102";
+                document.getElementById("gomuShadow").style.display = "block";
+            } else {
+                document.querySelector(".gomuStrem>.gPembed").style.zIndex = "";
+                this.classList.remove("gDark");
+                this.classList.add("gLight");
+                document.querySelector("#gCinema span").innerHTML = "Turn off Light";
+                this.style.zIndex = "";
+                document.getElementById("gomuShadow").style.display = "none";
+            }
+        });
+
+        document.getElementById("gCinema").addEventListener("click", function() {
+            if (this.style.visibility) {
+                document.querySelector(".gomuStrem>.gPembed, .gDark").style.zIndex = "";
+                document.getElementById("gCinema").classList.remove("gDark");
+                document.getElementById("gCinema").classList.add("gLight");
+                document.querySelector("#gCinema span").innerHTML = "Turn off Light";
+                this.style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>
